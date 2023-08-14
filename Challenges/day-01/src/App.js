@@ -1,5 +1,8 @@
 import './App.css';
 import Cards from './Components/Cards';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/css';
 
 function App() {
   return (
