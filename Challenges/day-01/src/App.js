@@ -1,18 +1,17 @@
 import './App.css';
-import Cards from './Components/Cards';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import Cars from './Components/Cars';
 
-import 'swiper/css';
-
-function App() {
+function App(props) {
   return (
-    <>
-      <Cards
-        image='./images/jayant-dassz.jpg'
-        name='jayant'
-        age={24}
-      />
-    </>
+    <div className='App'>
+      <div className='person'>
+        <img src={props.img}/>
+        <h1>My {props.name}</h1>
+        <p>My {props.name} is {props.color}</p>
+        <p>It's a bit older, from {props.year}</p>
+      </div>
+      <Cars/>
+    </div>
   );
 }
 
